@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Daffy Indira</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @media print {
+            body {
+                background: white !important;
+            }
+            .no-print {
+                display: none !important;
+            }
+            .cv-container {
+                box-shadow: none !important;
+                margin: 0 !important;
+                width: 100% !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal py-10">
+
+    <!-- Tombol Cetak / PDF -->
+    <div class="max-w-4xl mx-auto px-6 mb-6 flex justify-end no-print">
+        <button onclick="window.print()" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition duration-200 flex items-center gap-2">
+            <i class="fas fa-print"></i> Cetak / Simpan PDF
+        </button>
+    </div>
+
+    <!-- CV Container -->
+    <div class="cv-container max-w-4xl mx-auto bg-white shadow-2xl rounded-xl overflow-hidden grid grid-cols-1 md:grid-cols-3">
+        
+        <!-- Kolom Kiri (Sidebar / Profil & Kontak) -->
+        <div class="bg-slate-800 text-white p-8 flex flex-col items-center md:items-start">
+            <!-- Foto Profil -->
+            <div class="w-36 h-36 rounded-full border-4 border-blue-400 overflow-hidden shadow-lg mb-6 flex items-center justify-center bg-slate-700">
+                <img src="https://cdn.phototourl.com/member/2026-10-20-002de879-3290-4f65-92ea-e9f66d0aadae.jpg" alt="Foto Daffy Indira" class="w-full h-full object-cover">
+            </div>
+
+            <!-- Kontak & Informasi Pribadi -->
+            <div class="w-full space-y-4 mb-8">
+                <h3 class="text-lg font-semibold border-b border-slate-600 pb-2 text-blue-300">Informasi</h3>
+                <ul class="space-y-3 text-sm text-slate-300">
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-user text-blue-400 w-5"></i>
+                        <span>18 Tahun</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-map-marker-alt text-blue-400 w-5"></i>
+                        <span>Bandung, Indonesia</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Keahlian -->
+            <div class="w-full space-y-3">
+                <h3 class="text-lg font-semibold border-b border-slate-600 pb-2 text-blue-300">Keahlian</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-slate-700 text-blue-200 text-xs px-3 py-1 rounded-full">Bahasa Inggris</span>
+                    <span class="bg-slate-700 text-blue-200 text-xs px-3 py-1 rounded-full">Bahasa Indonesia</span>
+                    <span class="bg-slate-700 text-blue-200 text-xs px-3 py-1 rounded-full">Pengoperasian Komputer</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kolom Kanan (Konten Utama / Pengalaman & Profil) -->
+        <div class="col-span-2 p-8 md:p-10 flex flex-col justify-between">
+            <div>
+                <!-- Header Nama -->
+                <div class="mb-8 border-b pb-6">
+                    <h1 class="text-3xl md:text-4xl font-bold text-slate-800 tracking-tight">Daffy Indira</h1>
+                    <p class="text-blue-600 font-medium text-lg mt-1">Siswa / Pelajar & Profesional Muda</p>
+                </div>
+
+                <!-- Profil Singkat -->
+                <div class="mb-8">
+                    <h2 class="text-xl font-bold text-slate-800 mb-3 flex items-center gap-2">
+                        <i class="fas fa-address-card text-blue-600"></i> Tentang Saya
+                    </h2>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Individu yang aktif, disiplin, dan memiliki pengalaman organisasi yang kuat. Memiliki kemampuan komunikasi yang baik dalam bahasa Indonesia maupun Inggris, serta terampil dalam pengoperasian komputer. Siap berkontribusi dan berkembang di dunia kerja maupun organisasi profesional.
+                    </p>
+                </div>
+
+                <!-- Pengalaman Organisasi -->
+                <div class="mb-6">
+                    <h2 class="text-xl font-bold text-slate-800 mb-4 flex items-center gap-2">
+                        <i class="fas fa-users text-blue-600"></i> Pengalaman Organisasi
+                    </h2>
+                    <div class="space-y-4">
+                        <div class="border-l-2 border-blue-600 pl-4 py-1">
+                            <h3 class="font-semibold text-slate-800">Anggota / Pengurus</h3>
+                            <p class="text-blue-600 text-sm font-medium">Organisasi Siswa Intra Sekolah (OSIS)</p>
+                            <span class="text-xs text-slate-400 block mb-1">Durasi: 2 Tahun</span>
+                            <p class="text-slate-600 text-sm">
+                                Aktif berkontribusi dalam berbagai program kerja sekolah, memimpin dan bekerja sama dalam tim untuk menyelenggarakan kegiatan kesiswaan, serta mengasah kemampuan kepemimpinan dan komunikasi.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer / Catatan Kecil -->
+            <div class="border-t pt-4 text-center text-xs text-slate-400">
+                CV Dibuat secara otomatis • Daffy Indira - 2026
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
